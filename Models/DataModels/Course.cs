@@ -2,6 +2,7 @@
 
 namespace openBootcamp_aspNetApi_ejercicio1.Models.DataModels
 {
+    public enum Level { Basic, Intermediate, Advanced };
     public class Course : BaseEntity
     {
         [Required, StringLength(50)]
@@ -16,6 +17,6 @@ namespace openBootcamp_aspNetApi_ejercicio1.Models.DataModels
         public string Goals { get; set; } = string.Empty;
         [Required]
         public string Requirements { get; set; } = string.Empty;
-        public enum Nivel { Basic, Intermediate, Advanced};
+        public Level Level { get; set; }
     }
 }

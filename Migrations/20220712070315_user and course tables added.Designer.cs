@@ -12,7 +12,7 @@ using openBootcamp_aspNetApi_ejercicio1.DataAccess;
 namespace openBootcamp_aspNetApi_ejercicio1.Migrations
 {
     [DbContext(typeof(UniversityDBContext))]
-    [Migration("20220711202232_user and course tables added")]
+    [Migration("20220712070315_user and course tables added")]
     partial class userandcoursetablesadded
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -57,6 +57,9 @@ namespace openBootcamp_aspNetApi_ejercicio1.Migrations
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
+
+                    b.Property<int>("Level")
+                        .HasColumnType("int");
 
                     b.Property<string>("LongDescription")
                         .IsRequired()

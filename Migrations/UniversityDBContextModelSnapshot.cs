@@ -56,6 +56,9 @@ namespace openBootcamp_aspNetApi_ejercicio1.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<int>("Level")
+                        .HasColumnType("int");
+
                     b.Property<string>("LongDescription")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

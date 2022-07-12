@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace openBootcamp_aspNetApi_ejercicio1.Migrations
 {
-    public partial class coursetableadded : Migration
+    public partial class userandcoursetablesadded : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -21,6 +21,7 @@ namespace openBootcamp_aspNetApi_ejercicio1.Migrations
                     TargetAudience = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Goals = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Requirements = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Level = table.Column<int>(type: "int", nullable: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
